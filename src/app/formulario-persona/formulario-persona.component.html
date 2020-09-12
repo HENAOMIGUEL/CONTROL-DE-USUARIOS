@@ -1,0 +1,56 @@
+<br>
+<br>
+
+
+<div class="row container " style="justify-content: center;text-align: left;">
+
+    <div class="form-group">
+        <label for="Input-nombres">Nombres</label>
+        <input type="text" class="form-control" id="Input-nombres" [(ngModel)]="personaOL.nombres" value="{{personaOL.nombres}}">
+    </div>
+    <div class="form-group">
+        <label for="Input-apellidos">Apellidos</label>
+        <input type="text" class="form-control" id="Input-apellidos" [(ngModel)]="personaOL.apellidos" value="{{personaOL.apellidos}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Input-CC">Identificacion (CC)</label>
+        <input type="number" class="form-control" id="Input-CC" [(ngModel)]="personaOL.cc" value="{{personaOL.cc}}">
+    </div>
+
+    <div class="form-group">
+        <label for="combo-rol">Rol asociado</label>
+        <select class="form-control" id="combo-rol" [(ngModel)]="personaOL.rol" value="{{personaOL.rol}}">
+          <option>Administrador</option>
+          <option>Conductor</option>
+          <option>Recolector</option>
+          <option>Coordinador</option>  
+          <option>Digitador CG/UNO</option>
+    
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="combo-estado">Estado</label>
+        <select class="form-control" id="combo-estado" [(ngModel)]="personaOL.estado" value="{{personaOL.estado}}">
+          <option>Activo</option>
+          <option>Inactivo</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="Input-pass">Contraseña</label>
+        <input type="text" class="form-control" id="Input-pass" [(ngModel)]="personaOL.pass" value="{{personaOL.pass}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Input-tel">Telefono</label>
+        <input type="number" class="form-control" id="Input-tel" [(ngModel)]="personaOL.tel" value="{{personaOL.tel}}">
+    </div>
+
+    <div class="form-group">
+        <label for="Input-correo">Correo electronico</label>
+        <input type="email" class="form-control" id="Input-correo" placeholder="name@example.com" [(ngModel)]="personaOL.email" value="{{personaOL.email}}">
+    </div>
+
+</div>

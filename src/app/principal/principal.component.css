@@ -1,0 +1,21 @@
+.section {
+    border-radius: 10px;
+    position: relative;
+    height: 900px;
+    margin: 15px 0px 15px 10px;
+}
+
+.form-filtro {
+    border-radius: 10px;
+    height: 900px;
+    margin: 15px 0px 15px 10px;
+}
+
+footer {
+    border-radius: 10px;
+    text-align: center;
+    width: 95%;
+    height: 50px;
+    float: right;
+    margin-top: -4px;
+}

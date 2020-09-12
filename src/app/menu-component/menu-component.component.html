@@ -1,0 +1,92 @@
+<aside class="text-light animate__animated animate__bounceInLeft">
+
+    <div style="width: 80px;"></div>
+
+    <ul class="navbar-nav mr-auto" style="margin-top: 20px;">
+        <a [hidden]="hideTittle" class="titlesName animate__animated animate__bounceInLeft">
+            <i class="fas fa-laptop-code fa-2x" style="float: left;"></i>
+            <h5 [hidden]="hideTittle" style="float: right;"> OLSoftware </h5>
+        </a>
+        <a [hidden]="!hideTittle"> <i class="fas a-laptop-code fa-2x"></i> </a>
+    </ul>
+
+
+    <hr>
+
+    <ul class="navbar-nav mr-auto">
+        <a [hidden]="hideTittle" class="titlesName animate__animated animate__bounceInLeft"> <i class="fas fa-code fa-1x" style="float: left;"></i>
+            <h5 [hidden]="hideTittle" style="float: right;"> Programación </h5>
+        </a>
+        <a [hidden]="!hideTittle"> <i class="fas fa-code fa-2x"></i> </a>
+    </ul>
+
+    <ul class="navbar-nav mr-auto">
+        <a [hidden]="hideTittle" style="margin-right:4px;margin-left:8px;color:white" class="animate__animated animate__bounceInLeft"> <i class="fas fa-bars fa-1x" style="float: left;margin-right: 10px;"></i>
+            <h5 [hidden]="hideTittle" style="float: right;"> Gestión de operaciones </h5>
+        </a>
+        <a [hidden]="!hideTittle"> <i class="fas fa-bars fa-2x"></i> </a>
+    </ul>
+
+    <ul class="navbar-nav mr-auto">
+        <a [hidden]="hideTittle" class="titlesName animate__animated animate__bounceInLeft"> <i class="fas fa-address-card fa-1x" style="float: left;"></i>
+            <h5 [hidden]="hideTittle" style="float: right;"> Perfiles </h5>
+        </a>
+        <a [hidden]="!hideTittle"> <i class="fas fa-address-card fa-2x"></i> </a>
+    </ul>
+
+    <ul class="navbar-nav mr-auto">
+        <a [hidden]="hideTittle" class="titlesName animate__animated animate__bounceInLeft"> <i class="fas fa-users-cog fa-1x" style="float: left;"></i>
+            <h5 [hidden]="hideTittle" style="float: right;"> Roles </h5>
+        </a>
+        <a [hidden]="!hideTittle"> <i class="fas fa-users-cog fa-2x"></i> </a>
+    </ul>
+
+
+    <ul class="navbar-nav mr-auto">
+        <a [hidden]="hideTittle" class="titlesName animate__animated animate__bounceInLeft"> <i class="fas fa-house-user fa-1x" style="float: left;"></i>
+            <h5 [hidden]="hideTittle" style="float: right;"> Usuarios </h5>
+        </a>
+        <a [hidden]="!hideTittle"> <i class="fas fa-house-user fa-2x"></i> </a>
+    </ul>
+
+    <ul class="navbar-nav mr-auto">
+        <a [hidden]="hideTittle" class="titlesName animate__animated animate__bounceInLeft"> <i class="fas fa-file fa-1x" style="float: left;"></i>
+            <h5 [hidden]="hideTittle" style="float: right;"> Usuarios </h5>
+        </a>
+        <a [hidden]="!hideTittle"> <i class="fas fa-file fa-2x"></i> </a>
+    </ul>
+
+</aside>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+
+
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" (click)="showTitle()"> <i class="fas fa-hamburger fa-2x"></i>
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <h3 style="margin-top: 10px;">Control de Personas OLSOFTWARE</h3>
+            </li>
+
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0" style="padding-right: 100px;">
+            <img src="assets/img/man.png" height="70" width="70"> {{personaService.usuarioLoggeado.nombres}}
+            <a class="nav-link" (click)="logOut()"> <i class="fas fa-sign-out-alt fa-2x"></i>
+                <span class="sr-only">(current)</span></a>
+        </form>
+
+    </div>
+</nav>
