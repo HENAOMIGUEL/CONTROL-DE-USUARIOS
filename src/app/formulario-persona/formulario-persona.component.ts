@@ -7,16 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FormularioPersonaComponent implements OnInit {
 
-  @Input() personaOL = {}
+  @Input() personaOL: any = {}
 
 
   constructor() { }
 
   ngOnInit() {
     console.log(this.personaOL);
-    
+
   }
 
 
- 
+
 }

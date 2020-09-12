@@ -55,6 +55,7 @@ export class GestionPersonasComponent implements OnInit {
     if (this.validarRequeridos()) {
       if (this.validarDuplicados()) {
         console.log(this.personaOL);
+        this.personasOL.push(this.personaOL);
         this.personasFiltradasService.personasFiltradas.push(this.personaOL);
         this.personaService.guardarPersonasOL(this.personasFiltradasService.personasFiltradas);
         this.personaOL = {};
